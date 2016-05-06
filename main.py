@@ -1,16 +1,19 @@
 
 from source.window import *
-
+import cv2, cv
+import datetime
 def onCamera():
     # Entrando em modo live da camera
     print('Camera!')
 
 def onCapture(frame):
-    # Entrando em modo de captura
-    #   grab the photo!!
+    name = 'capturedImg/img'+str(datetime.datetime.now())+'.jpg'
+
+    cv.SaveImage(name,frame)
+    
     print('Capture!')
     w, h = cv.GetSize(frame)
-    # FIXME: Crop por width e height para caber na janela
+    
 
 
 def main():
@@ -25,3 +28,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+opepenc
