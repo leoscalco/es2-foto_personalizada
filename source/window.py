@@ -12,7 +12,7 @@ class WindowWidget(QtGui.QMainWindow):
 
     def __init__(self, parent=None):
         super(QtGui.QMainWindow, self).__init__(parent)
-        self.setFixedSize(800,640)
+        self.setMinimumSize(800,640)
         self.setWindowTitle('Awesome Window')
 
         self.init_ui()
