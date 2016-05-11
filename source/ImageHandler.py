@@ -9,7 +9,7 @@ class ImageHandler:
         self.white = [255, 255, 255, 255]
         self.trasparent = (255, 255, 255, 0) # not vector
 
-    def remove_background(self, im, color):
+    def remove_background(self, im, color, processedName):
         # http://stackoverflow.com/questions/21217384/remove-background-colour-from-image-using-python-pil
         # http://stackoverflow.com/questions/765736/using-pil-to-make-all-white-pixels-transparent
         self.im = im.convert('RGBA')
@@ -23,9 +23,9 @@ class ImageHandler:
             else:
                 newData.append(item)
         self.im.putdata(newData)
-        self.save_image(self.im, "transparent.png", "PNG")
+        self.save_image(self.im, 'transparent-' + processedName, "PNG")
 
-    def put_background(self, background):
+    def put_background(self, background, processedName):
         # http://stackoverflow.com/questions/13637028/adding-a-background-image-in-python
         # http://stackoverflow.com/questions/2563822/how-do-you-composite-an-image-onto-another-image-with-pil-in-python
         background = background.convert('RGBA')
@@ -34,7 +34,7 @@ class ImageHandler:
         offset = ((bg_w - im_w) / 2, (bg_h - im_h) / 2)
         # http://stackoverflow.com/questions/5324647/how-to-merge-a-transparent-png-image-with-another-image-using-pil
         background.paste(self.im, offset, self.im)
-        self.save_image(background, "implusback.png", "PNG")
+        self.save_image(background, 'implusback-' + processedName, "PNG")
 
     def dist(self, x0, y0, z0, x1, y1, z1):
         import math

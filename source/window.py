@@ -1,15 +1,16 @@
 import sys
+import os
 
 from PyQt4 import QtCore
 from PyQt4 import QtGui
-import os
+
 
 from source.camera import *
 
 class WindowWidget(QtGui.QMainWindow):
 
     camera = QtCore.pyqtSignal()
-    capture = QtCore.pyqtSignal(cv.iplimage)
+    capture = QtCore.pyqtSignal(cv.iplimage, str)
     background = QtCore.pyqtSignal();
     backgroundPath = ''
 
@@ -55,7 +56,7 @@ class WindowWidget(QtGui.QMainWindow):
 
 
     def _clickedCapture(self):
-        self.capture.emit(self.cameraWidget._frame)
+        self.capture.emit(self.cameraWidget._frame, self.backgroundPath)
 
     def _clickedCamera(self):
         self.camera.emit()
@@ -63,6 +64,7 @@ class WindowWidget(QtGui.QMainWindow):
     def _clickedBackgroundSelec(self):
         fname = QtGui.QFileDialog.getOpenFileName(self, 'Open file', 
                 os.getcwd() + '/images/backgrounds')
-        self.backgroundPath = fname
+        fname = fname[str(fname).find("images/backgrounds/"):]
+        self.backgroundPath = str(fname)
         print(self.backgroundPath)
 
