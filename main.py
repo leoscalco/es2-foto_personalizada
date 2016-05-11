@@ -10,8 +10,10 @@ def onCamera():
     # Entrando em modo live da camera
     print('Camera!')
 
-def onCapture(frame):
-    name = 'images/inputs/img'+str(datetime.datetime.now())+'.jpg'
+def onCapture(frame, backgroundPath):
+    processedName = 'img' + str(datetime.datetime.now())
+    name = 'images/inputs/' + processedName + '.jpg'
+    processedName = processedName + '.png'
 
     cv.SaveImage(name,frame)
     Qimg = OpenCVQImage(frame)
@@ -21,9 +23,9 @@ def onCapture(frame):
     bytes=Qimg.bits().asstring(Qimg.numBytes())
     img = Image.frombytes("RGB",(Qimg.width(),Qimg.height()),bytes)
 
-    imHandler.remove_background(img,[200,200,200])
-    background = PIL.Image.open("images/backgrounds/ECOMUSEU.jpg")
-    imHandler.put_background(background)
+    imHandler.remove_background(img,[200,200,200], processedName)
+    background = PIL.Image.open(str(backgroundPath))
+    imHandler.put_background(background, processedName)
 
 
 def main():
