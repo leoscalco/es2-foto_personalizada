@@ -11,6 +11,7 @@ def onCamera():
     print('Camera!')
 
 def onCapture(frame, backgroundPath):
+
     processedName = 'img' + str(datetime.datetime.now())
     name = 'images/inputs/' + processedName + '.jpg'
     processedName = processedName + '.png'
@@ -20,6 +21,7 @@ def onCapture(frame, backgroundPath):
 
     print('Capture!')
 
+
     bytes=Qimg.bits().asstring(Qimg.numBytes())
     img = Image.frombytes("RGB",(Qimg.width(),Qimg.height()),bytes)
 
@@ -28,14 +30,19 @@ def onCapture(frame, backgroundPath):
     imHandler.put_background(background, processedName)
 
 
+
+
+
 def main():
 
     app = QtGui.QApplication(sys.argv)
-
     window = WindowWidget()
     window.camera.connect(onCamera)
     window.capture.connect(onCapture)
 
+    
+
+    
     sys.exit(app.exec_())
 
 if __name__ == '__main__':
