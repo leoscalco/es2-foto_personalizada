@@ -16,7 +16,7 @@ def onCapture(frame, backgroundPath):
     name = 'images/inputs/' + processedName + '.jpg'
     processedName = processedName + '.png'
 
-    cv.SaveImage(name,frame)
+    cv.SaveImage(name, frame)
     Qimg = OpenCVQImage(frame)
 
     print('Capture!')

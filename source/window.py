@@ -3,6 +3,7 @@ import os
 
 from PyQt4 import QtCore
 from PyQt4 import *
+from EmailSender import *
 
 
 from source.camera import *
@@ -78,7 +79,7 @@ class imgWindowWidget(QtGui.QWidget):
     
     def __init__(self, path):
         super(QtGui.QWidget, self).__init__()
-        
+        self.path_to_email = path
         self.initUI(path)
         
     def initUI(self,path):
@@ -118,6 +119,15 @@ class imgWindowWidget(QtGui.QWidget):
             'Insira seu email')
         
         if ok:
-            
+
+            emailsender = EmailSender('smtp.gmail.com', 587)
             print(str(text))
+            try:
+                emailsender.login("leoscalcoxpe@gmail.com", "bute^^100.")
+                print self.path_to_email
+                emailsender.send_with_attachment(str(text), "Teste de envio com software", "body", self.path_to_email)
+                emailsender.quit()
+            except Exception, e:
+                print "Error!"
+                print str(e)
 

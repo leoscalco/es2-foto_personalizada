@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="afce7843-947d-40e4-ba4e-7d7c57334129" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/EmailSender.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-09 09:22:24.157063.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-09 09:25:03.661907.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-09 09:26:20.578319.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-09 17:18:06.096294.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-09 17:42:37.133650.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-09 17:44:12.354022.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-09 17:44:13.647116.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:00:02.372917.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:37:32.245841.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:38:13.871508.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:39:01.873447.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:39:50.437021.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:46:47.934101.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:49:03.801616.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:52:19.203602.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:53:06.771173.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:54:02.994256.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:54:49.673880.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:56:12.539574.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 08:59:31.149542.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:01:08.217159.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:01:31.086681.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:34:31.005159.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:40:21.256779.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:41:01.790955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:41:44.869114.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:42:50.439818.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-11 09:43:30.469116.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:00:21.319599.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:02:02.320670.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:02:30.227952.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:03:08.247536.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:06:09.273783.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:07:21.131668.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:07:40.812013.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:10:57.755719.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:11:17.586755.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:11:38.548671.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:13:24.540446.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:13:26.728542.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:13:52.870477.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:14:35.438943.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:15:29.392839.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:15:54.765469.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:16:14.290489.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:16:25.075893.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 09:21:46.188295.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:17:08.143803.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:17:31.080366.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:45:21.513275.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:47:46.189515.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:48:20.174854.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:48:44.856784.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:49:10.924244.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:49:48.696028.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:50:17.998509.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:50:31.102021.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:51:01.388302.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:52:29.684632.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:53:44.158914.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:54:45.499201.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:55:06.833889.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:56:40.042969.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:57:16.243781.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:57:42.556664.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:57:51.750234.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:58:59.529842.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:59:32.908955.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 10:59:58.944949.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:01:19.232530.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:01:26.680670.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:01:42.171476.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:04:35.337093.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:05:25.318285.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:05:46.858064.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:06:36.197327.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:07:30.121758.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:07:38.999080.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:08:22.469293.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:14:23.991825.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:14:29.961505.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:14:50.608726.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:14:55.658351.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:15:23.140057.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:17:57.266488.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:17:59.564623.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:18:01.859197.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:18:13.082875.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:18:35.865982.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:18:48.526842.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:19:45.763107.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:20:08.934621.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:20:36.031732.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-12 11:27:08.592400.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:18:35.524291.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:19:11.396604.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:19:45.735912.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:21:11.999257.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:21:27.852272.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:21:51.674278.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:22:10.748257.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:22:44.280006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/inputs/img2016-05-13 14:23:00.237620.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-11 08:00:02.372917.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:00:21.319599.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:02:02.320670.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:02:30.227952.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:03:08.247536.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:06:09.273783.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:07:21.131668.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:07:40.812013.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:10:57.755719.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:11:17.586755.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:11:38.548671.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:13:24.540446.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:13:26.728542.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:13:52.870477.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:14:35.438943.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:15:29.392839.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:15:54.765469.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:16:14.290489.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:16:25.075893.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 09:21:46.188295.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:47:46.189515.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:48:20.174854.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:48:44.856784.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:49:10.924244.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:49:48.696028.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:50:17.998509.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:50:31.102021.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:51:01.388302.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:52:29.684632.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:53:44.158914.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:54:45.499201.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:55:06.833889.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:56:40.042969.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:57:51.750234.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:58:59.529842.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:59:32.908955.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 10:59:58.944949.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:01:26.680670.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:01:42.171476.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:04:35.337093.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:05:46.858064.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:06:36.197327.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:07:38.999080.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:08:22.469293.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:14:29.961505.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:14:55.658351.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:15:23.140057.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:17:57.266488.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:17:59.564623.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:18:01.859197.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:18:13.082875.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:18:48.526842.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:19:45.763107.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:20:08.934621.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:20:36.031732.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-12 11:27:08.592400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:18:35.524291.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:19:11.396604.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:19:45.735912.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:21:11.999257.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:21:27.852272.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:21:51.674278.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:22:10.748257.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:22:44.280006.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/implusback-img2016-05-13 14:23:00.237620.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-11 08:00:02.372917.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:00:21.319599.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:02:02.320670.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:02:30.227952.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:03:08.247536.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:06:09.273783.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:07:21.131668.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:07:40.812013.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:10:57.755719.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:11:17.586755.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:11:38.548671.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:13:24.540446.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:13:26.728542.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:13:52.870477.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:14:35.438943.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:15:29.392839.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:15:54.765469.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:16:14.290489.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:16:25.075893.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 09:21:46.188295.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:17:08.143803.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:17:31.080366.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:45:21.513275.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:47:46.189515.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:48:20.174854.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:48:44.856784.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:49:10.924244.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:49:48.696028.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:50:17.998509.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:50:31.102021.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:51:01.388302.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:52:29.684632.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:53:44.158914.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:54:45.499201.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:55:06.833889.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:56:40.042969.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:57:16.243781.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:57:42.556664.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:57:51.750234.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:58:59.529842.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:59:32.908955.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 10:59:58.944949.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:01:19.232530.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:01:26.680670.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:01:42.171476.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:04:35.337093.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:05:25.318285.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:05:46.858064.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:06:36.197327.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:07:30.121758.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:07:38.999080.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:08:22.469293.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:14:23.991825.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:14:29.961505.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:14:50.608726.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:14:55.658351.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:15:23.140057.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:17:57.266488.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:17:59.564623.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:18:01.859197.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:18:13.082875.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:18:35.865982.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:18:48.526842.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:19:45.763107.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:20:08.934621.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:20:36.031732.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-12 11:27:08.592400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:18:35.524291.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:19:11.396604.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:19:45.735912.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:21:11.999257.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:21:27.852272.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:21:51.674278.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:22:10.748257.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:22:44.280006.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/outputs/transparent-img2016-05-13 14:23:00.237620.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/window.py" afterPath="$PROJECT_DIR$/source/window.py" />
+    </list>
+    <ignored path="es2-foto_personalizada.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="es2-foto_personalizada" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="window.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/window.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9028078">
+              <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="camera.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/camera.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/ImageHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EmailSender/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailSender.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EmailSender/EmailSender.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailSender.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/EmailSender.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EmailSender2/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/source/window.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="165" />
+    <option name="y" value="23" />
+    <option name="width" value="1429" />
+    <option name="height" value="1023" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmailSender" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="es2-foto_personalizada" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EmailSender" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="es2-foto_personalizada" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afce7843-947d-40e4-ba4e-7d7c57334129" name="Default" comment="" />
+      <created>1463181172800</created>
+      <option name="number" value="Default" />
+      <updated>1463181172800</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="165" y="23" width="1429" height="1023" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24982505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmailSender2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmailSender/EmailSender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/EmailSender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/ImageHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmailSender/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9028078">
+          <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
