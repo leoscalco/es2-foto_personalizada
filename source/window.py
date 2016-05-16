@@ -2,12 +2,14 @@ import sys
 import os
 
 from PyQt4 import QtCore
-from PyQt4 import QtGui
+from PyQt4 import *
+from EmailSender import *
 
 
 from source.camera import *
 
 class WindowWidget(QtGui.QMainWindow):
+
 
     camera = QtCore.pyqtSignal()
     capture = QtCore.pyqtSignal(cv.iplimage, str)
@@ -22,7 +24,7 @@ class WindowWidget(QtGui.QMainWindow):
         self.init_ui()
 
     def init_ui(self):
-
+        
         cameraDevice = CameraDevice(mirrored=True,parent=self)
         self.cameraWidget = CameraWidget(cameraDevice,self)
         self.cameraWidget.show()
@@ -55,8 +57,12 @@ class WindowWidget(QtGui.QMainWindow):
         self.show()
 
 
+
     def _clickedCapture(self):
         self.capture.emit(self.cameraWidget._frame, self.backgroundPath)
+
+
+        
 
     def _clickedCamera(self):
         self.camera.emit()
@@ -67,4 +73,61 @@ class WindowWidget(QtGui.QMainWindow):
         fname = fname[str(fname).find("images/backgrounds/"):]
         self.backgroundPath = str(fname)
         print(self.backgroundPath)
+
+
+class imgWindowWidget(QtGui.QWidget):
+    
+    def __init__(self, path):
+        super(QtGui.QWidget, self).__init__()
+        self.path_to_email = path
+        self.initUI(path)
+        
+    def initUI(self,path):
+        
+        okButton = QtGui.QPushButton("Aceitar")
+        okButton.clicked.connect(self._showDialog)
+        cancelButton = QtGui.QPushButton("Cancelar")
+
+        hbox = QtGui.QHBoxLayout()
+        hbox.addStretch(1)
+        hbox.addWidget(okButton)
+        hbox.addWidget(cancelButton)
+
+        vbox = QtGui.QVBoxLayout()
+        vbox.addStretch(1)
+        vbox.addLayout(hbox)
+        
+        self.setLayout(vbox)   
+        ibox = QtGui.QHBoxLayout(self)
+        imageMap = QtGui.QPixmap(path)
+        imageMap = imageMap.scaled(640, 480, QtCore.Qt.KeepAspectRatio) 
+        label = QtGui.QLabel(self)
+        label.setPixmap(imageMap)
+        ibox.addWidget(label)
+        label.setGeometry(0,0,640,480)
+        
+        
+        self.setGeometry(0, 0, 800, 640)
+        self.setWindowTitle('Imagem Resultante')  
+
+        self.show()
+        
+       
+
+    def _showDialog(self):
+        text, ok = QtGui.QInputDialog.getText(self, 'Email Input', 
+            'Insira seu email')
+        
+        if ok:
+
+            emailsender = EmailSender('smtp.gmail.com', 587)
+            print(str(text))
+            try:
+                emailsender.login("leoscalcoxpe@gmail.com", "bute^^100.")
+                print self.path_to_email
+                emailsender.send_with_attachment(str(text), "Teste de envio com software", "body", self.path_to_email)
+                emailsender.quit()
+            except Exception, e:
+                print "Error!"
+                print str(e)
 
