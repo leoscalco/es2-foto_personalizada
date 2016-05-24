@@ -123,7 +123,7 @@ class imgWindowWidget(QtGui.QWidget):
             emailsender = EmailSender('smtp.gmail.com', 587)
             print(str(text))
             try:
-                emailsender.login("leoscalcoxpe@gmail.com", "bute^^100.")
+                emailsender.login("63u.r2Y.R9n.9q5@gmail.com", "QpG-6ey-EJu-DwP")
                 print self.path_to_email
                 emailsender.send_with_attachment(str(text), "Teste de envio com software", "body", self.path_to_email)
                 emailsender.quit()
