@@ -1,10 +1,12 @@
 import sys
 import os
+import time
 
 from PyQt4 import QtCore
+from PyQt4 import QtGui
 from PyQt4 import *
 from EmailSender import *
-
+from os import walk
 
 from source.camera import *
 
@@ -56,10 +58,11 @@ class WindowWidget(QtGui.QMainWindow):
 
         self.show()
 
-
-
     def _clickedCapture(self):
-        self.capture.emit(self.cameraWidget._frame, self.backgroundPath)
+        #self.currentTime = str(datetime.datetime.now())
+        self.currentTime = str(time.ctime())
+        self.capture.emit(self.cameraWidget._frame, self.currentTime)
+        self.test = FinalPhotoSelect(self.currentTime)
         
     def _clickedCamera(self):
         self.camera.emit()
@@ -128,3 +131,57 @@ class imgWindowWidget(QtGui.QWidget):
                 print "Error!"
                 print str(e)
 
+
+class FinalPhotoSelect(QtGui.QWidget):
+
+    def __init__(self, currentTime):
+        super(FinalPhotoSelect, self).__init__()
+        self.currentTime = currentTime
+        self.initUI()
+
+    def initUI(self):
+        self.resize(640,480)
+        self.layout = QtGui.QVBoxLayout(self)
+
+        self.scene = QtGui.QGraphicsScene(self)
+        self.view = QtGui.QGraphicsView(self.scene)
+        self.layout.addWidget(self.view)
+
+        self.image = QtGui.QGraphicsPixmapItem()
+        self.scene.addItem(self.image)
+        self.view.centerOn(self.image)
+        self._images = []
+        
+        for file in os.listdir(os.getcwd() + '/images/outputs'):
+            if self.currentTime in file:
+                if 'transparent' not in file:
+                    print file
+                    self._images.append(QtGui.QPixmap('images/outputs/' + file))
+
+        self.slider = QtGui.QSlider(self)
+        self.slider.setOrientation(QtCore.Qt.Horizontal)
+        self.slider.setMinimum(0)
+        # max is the last index of the image list
+        self.slider.setMaximum(len(self._images)-1)
+        self.layout.addWidget(self.slider)
+
+        # set it to the first image, if you want.
+        self.sliderMoved(0)
+
+        self.slider.sliderMoved.connect(self.sliderMoved)
+
+        self.show()
+
+    def sliderMoved(self, val):
+        print "Slider moved to:", val
+        try:
+            self.image.setPixmap(self._images[val])
+        except IndexError:
+            print "Error: No image at index", val
+
+# if __name__ == "__main__":
+#     app = QtGui.QApplication([])
+#     w = FinalPhotoSelect()
+#     w.show()
+#     w.raise_()
+#     app.exec_()

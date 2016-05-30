@@ -1,8 +1,8 @@
 
 from source.window import *
 from source.ImageHandler import *
+from source.FinalPhotoSelect import *
 import cv2, cv,PIL
-import datetime
 
 imHandler = ImageHandler(100)
 
@@ -10,12 +10,12 @@ def onCamera():
     # Entrando em modo live da camera
     print('Camera!')
 
-def onCapture(frame, backgroundPath):
+def onCapture(frame, currentTime):
 
-    currentTime = str(datetime.datetime.now())
+    #currentTime = str(datetime.datetime.now())
 
-    processedName = 'img' + currentTime
-    name = 'images/inputs/' + processedName + '.jpg'
+    processedName = 'img' + str(currentTime)
+    name = 'images/inputs/' + processedName + '.png'
     processedName = processedName + '.png'
 
     cv.SaveImage(name, frame)
@@ -42,16 +42,12 @@ def onCapture(frame, backgroundPath):
 
 
 
-
 def main():
 
     app = QtGui.QApplication(sys.argv)
     window = WindowWidget()
     window.camera.connect(onCamera)
     window.capture.connect(onCapture)
-
-    
-
     
     sys.exit(app.exec_())
 
