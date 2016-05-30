@@ -44,10 +44,10 @@ class WindowWidget(QtGui.QMainWindow):
         captureButton.clicked.connect(self._clickedCapture)
         menuLayout.addWidget(captureButton)
 
-        backgroundSelectButton = QtGui.QPushButton("BACKGROUND")
-        backgroundSelectButton.setMinimumSize(100,40)
-        backgroundSelectButton.clicked.connect(self._clickedBackgroundSelec)
-        menuLayout.addWidget(backgroundSelectButton)
+        # backgroundSelectButton = QtGui.QPushButton("BACKGROUND")
+        # backgroundSelectButton.setMinimumSize(100,40)
+        # backgroundSelectButton.clicked.connect(self._clickedBackgroundSelec)
+        # menuLayout.addWidget(backgroundSelectButton)
 
         menuContainer.setLayout(menuLayout)
         menuContainer.show()
@@ -60,19 +60,16 @@ class WindowWidget(QtGui.QMainWindow):
 
     def _clickedCapture(self):
         self.capture.emit(self.cameraWidget._frame, self.backgroundPath)
-
-
         
-
     def _clickedCamera(self):
         self.camera.emit()
 
-    def _clickedBackgroundSelec(self):
-        fname = QtGui.QFileDialog.getOpenFileName(self, 'Open file', 
-                os.getcwd() + '/images/backgrounds')
-        fname = fname[str(fname).find("images/backgrounds/"):]
-        self.backgroundPath = str(fname)
-        print(self.backgroundPath)
+    # def _clickedBackgroundSelec(self):
+    #     fname = QtGui.QFileDialog.getOpenFileName(self, 'Open file', 
+    #             os.getcwd() + '/images/backgrounds')
+    #     fname = fname[str(fname).find("images/backgrounds/"):]
+    #     self.backgroundPath = str(fname)
+    #     print(self.backgroundPath)
 
 
 class imgWindowWidget(QtGui.QWidget):

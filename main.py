@@ -12,7 +12,9 @@ def onCamera():
 
 def onCapture(frame, backgroundPath):
 
-    processedName = 'img' + str(datetime.datetime.now())
+    currentTime = str(datetime.datetime.now())
+
+    processedName = 'img' + currentTime
     name = 'images/inputs/' + processedName + '.jpg'
     processedName = processedName + '.png'
 
@@ -25,9 +27,17 @@ def onCapture(frame, backgroundPath):
     bytes=Qimg.bits().asstring(Qimg.numBytes())
     img = Image.frombytes("RGB",(Qimg.width(),Qimg.height()),bytes)
 
+    backgroundsLocation = os.getcwd() + '/images/backgrounds';
+
     imHandler.remove_background(img,[200,200,200], processedName)
-    background = PIL.Image.open(str(backgroundPath))
-    imHandler.put_background(background, processedName)
+
+    for i, background in enumerate(os.listdir(backgroundsLocation)):    
+        background = 'images/backgrounds/' + background
+        #background = PIL.Image.open(str(backgroundPath))
+        #imHandler.put_background(background, processedName)
+        if background.endswith(".jpg"):
+            teste = PIL.Image.open(str(background))
+            imHandler.put_background(teste, `i` + processedName)
 
 
 

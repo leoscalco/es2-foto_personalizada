@@ -35,7 +35,7 @@ class ImageHandler:
         # http://stackoverflow.com/questions/5324647/how-to-merge-a-transparent-png-image-with-another-image-using-pil
         background.paste(self.im, offset, self.im)
         self.save_image(background, 'implusback-' + processedName, "PNG")
-        self.show_image('implusback-'+processedName)
+        #self.show_image('implusback-'+processedName)
         
 
     def dist(self, x0, y0, z0, x1, y1, z1):
