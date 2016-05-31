@@ -1,3 +1,22 @@
 
+# OSX
+*.DS_Store
+
+# Python
 *.py[cod]
 *$py.class
+
+# PyCharm
+.idea/
+
+# Sistemas de arquivo
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+._.Trashes
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
