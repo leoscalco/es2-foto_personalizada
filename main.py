@@ -1,7 +1,7 @@
 
-from source.window import *
+from source.mainWindowWidget import *
 from source.ImageHandler import *
-import cv2, cv,PIL
+import cv2, cv, PIL
 import os
 
 imHandler = ImageHandler(100)
@@ -33,6 +33,7 @@ def onCapture(frame, currentTime):
         if background.endswith(".jpg") or background.endswith(".png"):
             teste = PIL.Image.open(str(background))
             imHandler.put_background(teste, `i` + processedName)
+            
 
 def criaDiretorioSeNaoExistir():
     dirs = ['images',
@@ -49,7 +50,7 @@ def main():
 
     app = QtGui.QApplication(sys.argv)
 
-    window = WindowWidget()
+    window = MainWindowWidget()
     window.capture.connect(onCapture)
 
     sys.exit(app.exec_())
