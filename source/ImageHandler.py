@@ -1,8 +1,9 @@
 
 from PIL import Image
-from window import *
+from emailSenderWidget import *
+
 class ImageHandler:
-    
+
     def __init__(self, range):
         self.range = range
         self.black = [0, 0, 0, 255]
@@ -35,8 +36,8 @@ class ImageHandler:
         # http://stackoverflow.com/questions/5324647/how-to-merge-a-transparent-png-image-with-another-image-using-pil
         background.paste(self.im, offset, self.im)
         self.save_image(background, 'implusback-' + processedName, "PNG")
-        self.show_image('implusback-'+processedName)
-        
+        # self.show_image('implusback-'+processedName)
+
 
     def dist(self, x0, y0, z0, x1, y1, z1):
         import math
@@ -56,4 +57,4 @@ class ImageHandler:
         i.save("images/outputs/"+name, type)
 
     def show_image(self,path):
-        self.windowImg = imgWindowWidget('images/outputs/'+path)
+        self.windowImg = EmailSenderWidget('images/outputs/'+path)
