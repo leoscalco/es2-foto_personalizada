@@ -1,15 +1,13 @@
 
 from source.window import *
 from source.ImageHandler import *
-from source.FinalPhotoSelect import *
 import cv2, cv,PIL
+import os
 
 imHandler = ImageHandler(100)
 
 
 def onCapture(frame, currentTime):
-
-    #currentTime = str(datetime.datetime.now())
 
     processedName = 'img' + str(currentTime)
     name = 'images/inputs/' + processedName + '.png'
@@ -27,16 +25,27 @@ def onCapture(frame, currentTime):
 
     for i, background in enumerate(os.listdir(backgroundsLocation)):
         background = 'images/backgrounds/' + background
+        background = background.lower()
         #background = PIL.Image.open(str(backgroundPath))
         #imHandler.put_background(background, processedName)
-        if background.endswith(".jpg"):
+
+        # Aplica background e salva para cada imagem de background
+        if background.endswith(".jpg") or background.endswith(".png"):
             teste = PIL.Image.open(str(background))
             imHandler.put_background(teste, `i` + processedName)
 
-
-
+def criaDiretorioSeNaoExistir():
+    dirs = ['images',
+        'images/outputs',
+        'images/inputs',
+        'images/backgrounds']
+    for d in dirs:
+        if not os.path.exists(d):
+            os.makedirs(d)
 
 def main():
+
+    criaDiretorioSeNaoExistir()
 
     app = QtGui.QApplication(sys.argv)
 
