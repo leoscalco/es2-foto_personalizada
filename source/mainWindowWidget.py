@@ -55,4 +55,4 @@ class MainWindowWidget(QtGui.QMainWindow):
     def _clickedCapture(self):
         self.currentTime = str(time.ctime())
         self.capture.emit(self.cameraWidget._frame, self.currentTime)
-        self.test = FinalPhotoWidget(self.currentTime)
+        self.finalPhotoWindow = FinalPhotoWidget(self.currentTime)
