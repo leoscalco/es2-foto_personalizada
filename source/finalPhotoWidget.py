@@ -16,7 +16,7 @@ class FinalPhotoWidget(QtGui.QWidget):
         self.initUI()
 
     def initUI(self):
-        self.resize(640,480)
+        self.resize(860,600)
         self.layout = QtGui.QVBoxLayout(self)
 
         self.scene = QtGui.QGraphicsScene(self)
@@ -32,7 +32,7 @@ class FinalPhotoWidget(QtGui.QWidget):
             if self.currentTime in file:
                 if 'transparent' not in file:
                     print file
-                    self._images.append(QtGui.QPixmap('images/outputs/' + file))
+                    self._images.append(QtGui.QPixmap('images/outputs/' + file).scaled(640, 480, QtCore.Qt.KeepAspectRatio))
                     self._imagesPaths.append(os.getcwd() + '/images/outputs/' + file)
 
         self.slider = QtGui.QSlider(self)
