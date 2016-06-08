@@ -16,7 +16,7 @@ class FinalPhotoWidget(QtGui.QWidget):
         self.initUI()
 
     def initUI(self):
-        self.resize(860,600)
+        self.resize(1220,690)
         self.layout = QtGui.QVBoxLayout(self)
 
         self.scene = QtGui.QGraphicsScene(self)
@@ -28,18 +28,20 @@ class FinalPhotoWidget(QtGui.QWidget):
         self._images = []
         self._imagesPaths = []
 
+        self.imageListWidget = QtGui.QListWidget(self)
+        self.imageListWidget.setMinimumHeight(110)
+        self.imageListWidget.setViewMode(1)
+        self.imageListWidget.setIconSize(QtCore.QSize(135,120))
+        self.imageListWidget.setResizeMode(0)
+        self.imageListWidget.setMaximumHeight(110)
+
         for file in os.listdir(os.getcwd() + '/images/outputs'):
             if self.currentTime in file:
                 if 'transparent' not in file:
                     print file
                     self._images.append(QtGui.QPixmap('images/outputs/' + file).scaled(640, 480, QtCore.Qt.KeepAspectRatio))
+                    self.imageListWidget.addItem(QtGui.QListWidgetItem(QtGui.QIcon("images/outputs/" + file), ""))
                     self._imagesPaths.append(os.getcwd() + '/images/outputs/' + file)
-
-        self.slider = QtGui.QSlider(self)
-        self.slider.setOrientation(QtCore.Qt.Horizontal)
-        self.slider.setMinimum(0)
-        
-        self.slider.setMaximum(len(self._images)-1)
 
         menuContainer = QtGui.QWidget(self)
         menuContainer.setMinimumSize(320,40)
@@ -63,19 +65,20 @@ class FinalPhotoWidget(QtGui.QWidget):
 
         self.layout.addWidget(menuContainer)
         self.layout.addWidget(self.view)
-        self.layout.addWidget(self.slider)
+        self.layout.addWidget(self.imageListWidget)
 
-        # set it to the first image, if you want.
-        self.sliderMoved(0)
-        self.slider.sliderMoved.connect(self.sliderMoved)
+        self.imageListWidget.itemClicked.connect(self.thumbClicked)
+        self.imageListWidget.setCurrentRow(0)
+        self.thumbClicked(0)
+
         self.show()
 
-    def sliderMoved(self, val):
+    def thumbClicked(self, thumbnail):
         try:
-            self.image.setPixmap(self._images[val])
-            self.currentImageIndex = val
+            self.image.setPixmap(self._images[self.imageListWidget.currentRow()])
+            self.currentImageIndex = self.imageListWidget.currentRow()
         except IndexError:
-            print "Error: No image at index", val
+            print "Error: No image at index", self.imageListWidget.currentRow()
 
     def _clickedSelect(self):
         print self.currentImageIndex
