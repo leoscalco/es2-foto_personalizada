@@ -35,9 +35,20 @@ class ImageHandler:
         offset = ((bg_w - im_w) / 2, (bg_h - im_h) / 2)
         # http://stackoverflow.com/questions/5324647/how-to-merge-a-transparent-png-image-with-another-image-using-pil
         background.paste(self.im, offset, self.im)
+        background = self.put_logo(background)
         self.save_image(background, 'implusback-' + processedName, "PNG")
         # self.show_image('implusback-'+processedName)
 
+    def put_logo(self, i):
+        i = i.convert('RGB')
+        bg_w, bg_h = i.size
+        logo = Image.open("images/inputs/logos/ecomuseu-borda.png")
+        logo = logo.convert('RGBA')
+        logo_w, logo_h = logo.size
+        offset = ((bg_w - logo_w - 20), (bg_h - logo_h - 20))
+        # http://stackoverflow.com/questions/5324647/how-to-merge-a-transparent-png-image-with-another-image-using-pil
+        i.paste(logo, offset, logo)
+        return i
 
     def dist(self, x0, y0, z0, x1, y1, z1):
         import math
