@@ -6,9 +6,10 @@ import os
 
 imHandler = ImageHandler(100)
 
+__backgroundColor__ = [200,200,200]
 
 def onCapture(frame, currentTime):
-
+    # TODO: Melhorar o acesso a pastas melhorar o referenciamento a elas tambem
     processedName = 'img' + str(currentTime)
     name = 'images/inputs/' + processedName + '.png'
     processedName = processedName + '.png'
@@ -21,19 +22,19 @@ def onCapture(frame, currentTime):
 
     backgroundsLocation = os.getcwd() + '/images/backgrounds';
 
-    imHandler.remove_background(img,[200,200,200], processedName)
+    # FIXME: Melhorar desempenho desta funcao
+    imHandler.remove_background(img, __backgroundColor__, processedName)
 
     for i, background in enumerate(os.listdir(backgroundsLocation)):
         background = 'images/backgrounds/' + background
         background = background.lower()
-        #background = PIL.Image.open(str(backgroundPath))
-        #imHandler.put_background(background, processedName)
 
         # Aplica background e salva para cada imagem de background
+        # TODO: adicionar mais extensoes
         if background.endswith(".jpg") or background.endswith(".png"):
             teste = PIL.Image.open(str(background))
             imHandler.put_background(teste, `i` + processedName)
-            
+
 
 def criaDiretorioSeNaoExistir():
     dirs = ['images',
