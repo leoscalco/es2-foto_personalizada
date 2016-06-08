@@ -75,6 +75,9 @@ class FinalPhotoWidget(QtGui.QWidget):
         self.layout.addWidget(self.imageListWidget)
         self.layout.addWidget(self.slider)
 
+
+        self.imageListWidget.itemClicked.connect(self.thumbClicked)
+
         self.sliderMoved(0)
         self.slider.sliderMoved.connect(self.sliderMoved)
         self.show()
@@ -85,6 +88,13 @@ class FinalPhotoWidget(QtGui.QWidget):
             self.currentImageIndex = val
         except IndexError:
             print "Error: No image at index", val
+
+    def thumbClicked(self, thumbnail):
+        try:
+            self.image.setPixmap(self._images[self.imageListWidget.currentRow()])
+            self.currentImageIndex = self.imageListWidget.currentRow()
+        except IndexError:
+            print "Error: No image ate index", self.imageListWidget.currentRow()
 
     def _clickedSelect(self):
         print self.currentImageIndex
