@@ -42,7 +42,7 @@ class ImageHandler:
     def put_logo(self, i):
         i = i.convert('RGB')
         bg_w, bg_h = i.size
-        logo = Image.open("images/inputs/logos/ecomuseu-borda.png")
+        logo = Image.open("images/inputs/logos/logo-eco-itaipu.png")
         logo = logo.convert('RGBA')
         logo_w, logo_h = logo.size
         offset = ((bg_w - logo_w - 20), (bg_h - logo_h - 20))
