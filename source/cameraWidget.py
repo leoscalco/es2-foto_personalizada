@@ -89,6 +89,7 @@ class CameraWidget(QtGui.QWidget):
         self._cameraDevice.newFrame.connect(self._onNewFrame)
 
         w, h = self._cameraDevice.frameSize
+        
         self.setMinimumSize(w, h)
         self.setMaximumSize(w, h)
 
