@@ -45,9 +45,16 @@ class ImageHandler:
         logo = Image.open("images/inputs/logos/logo-eco-itaipu.png")
         logo = logo.convert('RGBA')
         logo_w, logo_h = logo.size
+
         offset = ((bg_w - logo_w - 20), (bg_h - logo_h - 20))
         # http://stackoverflow.com/questions/5324647/how-to-merge-a-transparent-png-image-with-another-image-using-pil
         i.paste(logo, offset, logo)
+
+        logo1 = Image.open("images/inputs/logos/eco-1-gray.png")
+        logo1.convert("RGBA")
+        offset = (20, 20)
+        i.paste(logo1, offset, logo1)
+
         return i
 
     def dist(self, x0, y0, z0, x1, y1, z1):
