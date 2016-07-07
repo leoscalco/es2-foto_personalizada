@@ -29,8 +29,12 @@ class MainWindowWidget(QtGui.QMainWindow):
         self.cameraWidget = CameraWidget(cameraDevice,self)
         self.cameraWidget.show()
 
-        # Ajusta a janela para o tamanho da imagem da camera
-        self.setGeometry(0, 0,self.cameraWidget.width(), self.cameraWidget.height())
+        # Ajusta a posicao da camera para o centro da janela
+        self.cameraWidget.move(QtGui.QApplication.desktop().screen().rect().center() - self.cameraWidget.rect().center())
+
+        # Ajusta a janela para o tamanho da tela do computador
+        resolution = QtGui.QDesktopWidget().screenGeometry()
+        self.setGeometry(0, 0, resolution.width(), resolution.height())
 
         # TODO: Melhorar o layout dos botoes
         menuContainer = QtGui.QWidget(self)
@@ -38,7 +42,7 @@ class MainWindowWidget(QtGui.QMainWindow):
         menuLayout = QtGui.QHBoxLayout()
 
         #############
-        captureButton = QtGui.QPushButton("Capture")
+        captureButton = QtGui.QPushButton("Capturar")
         captureButton.setMinimumSize(50,40)
         captureButton.clicked.connect(self._clickedCapture)
 

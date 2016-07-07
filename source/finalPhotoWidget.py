@@ -16,7 +16,8 @@ class FinalPhotoWidget(QtGui.QWidget):
         self.initUI()
 
     def initUI(self):
-        self.resize(1220,690)
+        resolution = QtGui.QDesktopWidget().screenGeometry()
+        self.setGeometry(0, 0, resolution.width(), resolution.height())
         self.layout = QtGui.QVBoxLayout(self)
 
         self.scene = QtGui.QGraphicsScene(self)
@@ -34,14 +35,6 @@ class FinalPhotoWidget(QtGui.QWidget):
         self.imageListWidget.setIconSize(QtCore.QSize(135,120))
         self.imageListWidget.setResizeMode(0)
         self.imageListWidget.setMaximumHeight(110)
-
-        for file in os.listdir(os.getcwd() + '/images/outputs'):
-            if self.currentTime in file:
-                if 'transparent' not in file:
-                    print file
-                    self._images.append(QtGui.QPixmap('images/outputs/' + file).scaled(640, 480, QtCore.Qt.KeepAspectRatio))
-                    self.imageListWidget.addItem(QtGui.QListWidgetItem(QtGui.QIcon("images/outputs/" + file), ""))
-                    self._imagesPaths.append(os.getcwd() + '/images/outputs/' + file)
 
         menuContainer = QtGui.QWidget(self)
         menuContainer.setMinimumSize(320,40)
@@ -67,11 +60,24 @@ class FinalPhotoWidget(QtGui.QWidget):
         self.layout.addWidget(self.view)
         self.layout.addWidget(self.imageListWidget)
 
+        self.show()
+
+        for file in os.listdir(os.getcwd() + '/images/outputs'):
+            if self.currentTime in file:
+                if 'transparent' not in file:
+                    print file
+                    self._images.append(QtGui.QPixmap('images/outputs/' + file).scaled(self.view.width() - 5, self.view.height() - 5, QtCore.Qt.KeepAspectRatio))
+                    self.imageListWidget.addItem(QtGui.QListWidgetItem(QtGui.QIcon("images/outputs/" + file), ""))
+                    self._imagesPaths.append(os.getcwd() + '/images/outputs/' + file)
+
+
         self.imageListWidget.itemClicked.connect(self.thumbClicked)
         self.imageListWidget.setCurrentRow(0)
         self.thumbClicked(0)
 
-        self.show()
+
+        print self.view.width()
+        print self.view.height()
 
     def thumbClicked(self, thumbnail):
         try:
