@@ -17,14 +17,31 @@ class ImageHandler:
         self.data = im.getdata()
 
         newData = []
+        avColor = self.color_average(im)
         for item in self.data:
             # if self.is_in_range(item[0], color[0], self.range) and self.is_in_range(item[1], color[1], self.range) and self.is_in_range(item[2], color[2], self.range):
-            if (self.dist(item[0], item[1], item[2], color[0], color[1], color[2]) < self.range):
+            if (self.dist(item[0], item[1], item[2], avColor[0], avColor[1], avColor[2]) < self.range):
                 newData.append(self.trasparent)
             else:
                 newData.append(item)
         self.im.putdata(newData)
         self.save_image(self.im, 'transparent-' + processedName, "PNG")
+
+    def color_average(self, im):
+        firula = 30
+        r = 0
+        g = 0
+        b = 0
+        bg_w, bg_h = self.im.size
+        img = im.convert('RGB')
+        rangge = bg_w/firula
+        d=0
+        for i in range(0, firula):
+            x, y, z = img.getpixel((d, 1))
+            d += rangge
+            r += x;g += y;b += z
+        return r/firula, g/firula, b/firula
+
 
     def put_background(self, background, processedName):
         # http://stackoverflow.com/questions/13637028/adding-a-background-image-in-python
