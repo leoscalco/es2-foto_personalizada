@@ -1,9 +1,12 @@
 
 from source.mainWindowWidget import *
 from source.ImageHandler import *
+from canon import camera
 import cv2, cv, PIL
 import os
 
+cam = camera.find()
+cam
 imHandler = ImageHandler(100)
 
 __backgroundColor__ = [200,200,200]
