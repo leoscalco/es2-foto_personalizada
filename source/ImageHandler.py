@@ -20,7 +20,7 @@ class ImageHandler:
         avColor = self.color_average(im)
         for item in self.data:
             # if self.is_in_range(item[0], color[0], self.range) and self.is_in_range(item[1], color[1], self.range) and self.is_in_range(item[2], color[2], self.range):
-            if (self.dist(item[0], item[1], item[2], avColor[0], avColor[1], avColor[2]) < self.range):
+            if (self.dist(item[0]*1.3, item[1], item[2]*1.3, avColor[0], avColor[1], avColor[2]) < self.range):
                 newData.append(self.trasparent)
             else:
                 newData.append(item)
